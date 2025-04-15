@@ -1,0 +1,6 @@
+Abstração.
+Encapsulamento.
+Herança.
+Polimorfismo.
+
+-Modificadores de acesso.
