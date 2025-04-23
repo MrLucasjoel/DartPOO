@@ -1,7 +1,10 @@
+import 'Caminhao.dart';
+import 'Carro.dart';
 import 'Cachorro.dart';
 import 'Gato.dart';
-
-//repositório prof https://github.com/bracellos/dart-poo
+import 'Moto.dart';
+import 'PagamentoCartao.dart';
+import 'PagamentoPix.dart';
 
 /**
  abstração é o principio da programação orientada a objetos (POO) que 
@@ -26,4 +29,34 @@ void main(List<String> args){
   //Usando interface através dpo implements
   //quando usamos implements, a classe é obrigada a implementar tudo que existe na classe
   //abstrata, incluindo métodos já implementados
+
+  //exemplo com meios de pagamento 
+  PagamentoPix pix = PagamentoPix(300);
+  pix.realizaPagamento();
+  pix.emitirComprovante();
+
+  //pagamento cartão
+  PagamentoCartao cartao = PagamentoCartao(300, 3);
+  cartao.realizaPagamento();
+  cartao.emitirComprovante();
+
+  //carro
+  Carro car = Carro();
+  car.abastecer();
+  car.ligar();
+  car.desligar();
+  car.businar();
+
+  //Moto
+  Moto cg = Moto();
+  cg.ligar();
+  cg.businar();
+  cg.desligar();
+  cg.abastecer();
+
+  Caminhao truck = Caminhao();
+  truck.ligar();
+  truck.businar();
+  truck.desligar();
+  truck.abastecer();
 }
