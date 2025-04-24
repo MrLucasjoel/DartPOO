@@ -1,7 +1,7 @@
-import 'Mensagem.dart';
+import 'Email.dart';
 
 void main(){
-  Mensagem msg = Mensagem("Pago", 80);
+  Email msg = Email("Pago", 80);
   msg.realizaPagamento();
   msg.emitirComprovante();
 }

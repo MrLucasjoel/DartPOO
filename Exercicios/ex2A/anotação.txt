@@ -1,0 +1,35 @@
+abstract class Imposto {
+
+    double calcular(); //metodo abstrado
+
+    //método concreto - só preciso sobrescrever ele se usar implements na classe filha
+    void exibirImposto(double valor){
+        double imposto = calcular(valor);
+        print("Imposto sobre R\$ ${valor.toStringAsFixed(2)} é de R\$ ${imposto.toStringAsFixed(2)}");
+    }
+}
+
+import'Imposto.dart";
+
+class ImpostoRenda extends Imposto{
+
+double calcular(double valor){
+  return valor * 0.15;
+
+}
+}
+
+
+class ImpostoProduto extends Imposto {
+
+@override 
+double calcular(double valor) {
+  return valor * 0.7
+}
+}
+
+ImpostoRenda ir = ImpostoRenda();
+ir.exibirImposto(3000);
+
+ImpostoProduto ip = ImpostoProduto();
+ip.exibirImposto(9500);

@@ -1,10 +1,10 @@
 import 'Notificacao.dart';
 
-class Mensagem implements Notificacao{
+class Email implements Notificacao{
 String msg;
 int valor = 80;
 
-Mensagem(this.msg, this.valor);
+Email(this.msg, this.valor);
 
 
   String status ='';
@@ -19,3 +19,15 @@ Mensagem(this.msg, this.valor);
     print("Pagamento via pix comfirmado.");
   } 
 }
+
+/**
+ import'Notificacao.dart';
+ 
+ class Email extends Notificacao{
+ void enviar(String mensagem){
+ }
+
+ void metodoSemParametro(){
+
+}
+ */

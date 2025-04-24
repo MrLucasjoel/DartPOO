@@ -1,11 +1,11 @@
 import 'Calcular.dart';
 
-class Impostorenda implements Calcular{
+class ImpostoRenda implements Calcular{
 
   double valor;
   
 
-  Impostorenda(this.valor);
+  ImpostoRenda(this.valor);
 
   
   void getValor(){
