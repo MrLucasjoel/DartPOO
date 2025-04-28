@@ -1,5 +1,5 @@
 import 'Carro.dart';
-import 'Moto.dart';
+
 
 void main(List<String> args){
 
@@ -18,7 +18,5 @@ void main(List<String> args){
   for (var i = 0; i < modelo.length; i++) {
     print(modelo[i].apresentar());
   }
-  Moto mot = new Moto();
-  modelo.add(car);
 }
 
